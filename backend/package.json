@@ -1,0 +1,47 @@
+{
+  "name": "ai-ml",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "typecheck": "bunx tsc --noEmit",
+    "seed": "bunx --bun prisma db seed --config prisma7.config.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "prisma": "^7.10.1",
+    "tsx": "^4.23.15"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@lancedb/lancedb": "^0.41.0",
+    "@langchain/anthropic": "^1.6.5",
+    "@langchain/classic": "^1.0.61",
+    "@langchain/community": "^1.1.29",
+    "@langchain/core": "^1.4.0",
+    "@langchain/langgraph": "^1.7.4",
+    "@langchain/ollama": "^1.3.0",
+    "@langchain/openai": "^1.8.4",
+    "@langchain/openrouter": "^0.4.25",
+    "@langchain/tavily": "^1.2.1",
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "7",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "better-sse": "^0.16.1",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "date-fns": "^4.4.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "langchain": "^1.6.5",
+    "pg": "^8.23.1",
+    "tiktoken": "^1.0.22",
+    "zod": "^4.6.7"
+  }
+}
