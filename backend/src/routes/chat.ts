@@ -43,7 +43,7 @@ chatRouter.post("/", async (req, res) => {
       if (metadata.langgraph_node !== ANSWER_NODE || !AIMessageChunk.isInstance(message)) continue;
 
       const text = chunkText(message.content);
-      if (text) session.push({ text }, "token");
+      if (text) session.push({ text }, "text");
     }
 
     if (!abort.signal.aborted) session.push({}, "done");
